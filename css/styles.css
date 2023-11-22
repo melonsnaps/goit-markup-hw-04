@@ -124,11 +124,13 @@ nav .link {
 }
 
 .main-section {
-    background-color: #2e2f42;
+    background: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url("../images/pplofc.jpg");
+    background-size: cover;
     color: #ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    width: 1440рх;
 }
 
 .main-section h1 {
@@ -186,6 +188,12 @@ button:focus {
     display: flex;
 }
 
+.services-icon {
+    padding: 24px 0;
+    text-align: center;
+    background-color: #F4F4FD;
+}
+
 /* END OF SERVICES */
 
 /* CSS FOR WHAT WE DO */
@@ -240,7 +248,57 @@ button:focus {
     letter-spacing: 0.32px;
 }
 
+.team-socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-socials-icon {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-socials-icon svg {
+    fill: white;
+}
+
 /* END OF TEAM SECTION */
+
+/* CUSTOMERS STYLING */
+
+.customers {
+    background: #FFF;
+}
+
+.customers .section-title {
+    text-align: center;
+}
+
+.customer-icon {
+    border: 1px solid #8e8f99;
+    padding: 16px 32px;
+}
+
+.customer-icon svg {
+    fill: #8e8f99;
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
+    border-color: var(--iris);
+}
+
+.customer-icon:hover svg,
+.customer-icon:focus svg {
+    fill: var(--iris);
+}
+
+/* END OF CUSTOMERS STYLING */
 
 footer {
     background-color: #2e2f42;
@@ -253,6 +311,14 @@ footer {
     padding-bottom: 100px;
 }
 
+footer .footer-inner {
+    display: flex;
+}
+
+.footer-inner {
+    align-items: baseline;
+}
+
 footer .logo {
     font-family: Raleway;
     font-size: 18px;
@@ -262,6 +328,7 @@ footer .logo {
     text-transform: uppercase;
     color: #f4f4fd;
 }
+
 
 /* PORTFOLIO PAGE STYLING */
 .categories {
